@@ -1,0 +1,28 @@
+<!-- <div><img src="assets/images/burza.jpg" alt=""></div> -->
+
+<div class="app-content">
+    <div class="panel-action">
+      <div>
+          <label class="label-city" >Podaj lokalizacje: </label>
+          <input type="text" placeholder="miasto" [(ngModel)]='city' class="input-city" >
+      </div>
+      <div>
+        <input type="submit" (click)='getWeatherForCity()' class="btn-search" >
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="weather-box">
+        <app-weather-today [ngStyle]="{'background-image': 'url(' + photo + ')'}" [weather]="today" [city]="cityOutput"></app-weather-today>
+        <div class="text-section">
+            Prognoza na najbliższe dni
+        </div>
+        <div class="wheather-days"> 
+          <app-weather-next *ngFor="let date of dates ;let indexOfelement=index;"  [ngStyle]="{'background-image': 'url(' + photos[indexOfelement] + ')'}" [weather]="date" [city]="cityOutput" ></app-weather-next>
+        <!-- <app-weather-next [ngStyle]="{'background-image': 'url(' + photo + ')'}" [weather]="weather" [city]="cityOutput" ></app-weather-next>
+        <app-weather-next [ngStyle]="{'background-image': 'url(' + photo + ')'}" [weather]="weather" [city]="cityOutput"></app-weather-next>
+        <app-weather-next [ngStyle]="{'background-image': 'url(' + photo + ')'}" [weather]="weather" [city]="cityOutput"></app-weather-next> -->
+        </div>
+    </div>    
+  </div>
+
+  

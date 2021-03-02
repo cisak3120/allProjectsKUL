@@ -1,0 +1,100 @@
+
+
+
+
+.app-content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-container{
+  display: flex;
+  flex-basis: 100%;
+  flex-shrink: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.weather-box{
+  display: flex;
+  flex-basis: 100%;
+  flex-shrink: 1;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.panel-action{
+  display: flex;
+  flex-basis: 50px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  background-color: #eaebee;
+}
+.wheather-day{
+   background: url(https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_1280.jpg) no-repeat ;
+   background-attachment: fixed;
+   background-position: center;
+   flex-basis: 100%;
+   background-size: cover;
+   margin: 0px;
+   flex-basis: 100%; 
+   flex-shrink: 1;          
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+.text-section{
+  display: flex;
+  flex-shrink: 0;
+  flex-basis:  30px;
+  font-size: 30px;
+  justify-content: center;
+  background-color: #eaebee;
+}
+
+
+.wheather-days{
+   height: 40%;
+   display: flex;
+   flex-shrink: 0;
+   flex-basis: 30%;
+}
+    
+
+
+.input-city{
+  width: 200px;
+  border-radius: 4px;
+  padding: 3px;
+  caret-color: rgb(87, 135, 165);
+  outline: none;
+  border: 1px solid blue;
+  height: 25px;
+}
+
+.input-city:focus{
+  border: 1px solid rgb(36, 119, 170);
+  -webkit-box-shadow: 0px 0px 6px 0px rgb(36, 119, 170);
+  -moz-box-shadow: 0px 0px 6px 0px rgb(36, 119, 170);
+  box-shadow: 0px 0px 6px 0px rgb(36, 119, 170);
+}
+
+.btn-search{
+  border-radius: 4px;
+  height: 33px;
+  margin-left: 3px;
+  border: 1px solid #0043ff;
+  background-color: #2fc1d0;
+  color: white;
+  outline: none;
+}
+.btn-search:hover{
+  background-color: #359aa5;
+}
+.btn-search:focus{
+  border: 1px solid #0c3184;
+}
