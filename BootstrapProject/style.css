@@ -1,0 +1,25 @@
+#tytul {
+    background-color: lavender;
+    text-align: center;
+}
+header {
+    color: indigo;
+}
+.bg-menuNav
+{
+    background-color: indigo;
+}
+#logowanie
+{
+    width: 200px;
+    background-color: indigo;
+    color: white;
+}
+#logInline
+{
+    color: white;
+}
+.btn-mybutton
+{
+    background-color: lavender;
+}

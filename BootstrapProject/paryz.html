@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+
+    <title>Podróże</title>
+</head>
+<body>
+<header>
+    <nav class="navbar bg-menuNav navbar-dark navbar-expand-md">
+        <a class="navbar-brand" href="index.html">Podróże</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"><span
+                class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle"
+                            type="button" data-toggle="dropdown">Europa
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Francja</a></li>
+                        <li><a class="dropdown-item" href="#">Grecja</a></li>
+                        <li><a class="dropdown-item" href="#">Portugalia</a></li>
+                        <li><a class="dropdown-item" href="#">Islandia</a></li>
+                        <li><a class="dropdown-item" href="#">Macedonia Północna</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle"
+                            type="button" data-toggle="dropdown">Azja
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Japonia</a></li>
+                        <li><a class="dropdown-item" href="#">Malediwy</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle"
+                            type="button" data-toggle="dropdown">Ameryka Północna
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Stany Zjednoczone</a></li>
+                        <li><a class="dropdown-item" href="#">Kanada</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle"
+                            type="button" data-toggle="dropdown">Ameryka Południowa
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Brazylia</a></li>
+                        <li><a class="dropdown-item" href="#">Peru</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle"
+                            type="button" data-toggle="dropdown">Afryka
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Egipt</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle"
+                            type="button" data-toggle="dropdown">Przewodniki
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item active" href="paryz.html">Paryż</a></li>
+                        <li><a class="dropdown-item" href="#">Barcelona</a></li>
+                        <li><a class="dropdown-item" href="#">Skopje</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <form class="form-inline ml-auto">
+                <input class="form-control" type="search" placeholder="Wyszukaj">
+                <button type="submit" class="btn btn-light ml-2">Znajdź</button>
+            </form>
+
+            <div class="dropdown px-3 py-2">
+                <button class="btn btn-outline-light dropdown-toggle"
+                        type="button" data-toggle="dropdown">Logowanie
+                </button>
+                <form class="dropdown-menu px-3 py-2 dropdown-menu-left dropdown-menu-md-right" id="logowanie">
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Hasło:</label>
+                        <input type="password" class="form-control" id="haslo" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-light">Zaloguj się</button>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="rejestracja.html">Załóż konto</a>
+                    <a class="dropdown-item" href="#">Przypomnij hasło</a>
+                </form>
+            </div>
+
+
+        </div>
+
+    </nav>
+</header>
+
+
+<div class="container-fluid" id="tytul">
+    <header>
+        <h1>Paryż - Francja</h1>
+        <p>Przewodnik po najważniejszych miejscach w Parżu i okolicy</p>
+    </header>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-secondary">Luwr</button>
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"></button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Rzeźby</a>
+                <a class="dropdown-item" href="#">Obrazy</a>
+                <a class="dropdown-item" href="#">Sztuka Starożytnego Egiptu</a>
+                <a class="dropdown-item" href="#">Sztuka Starożytnej Grecji</a>
+                <a class="dropdown-item" href="#">Sztuka Bliskiego Wschodu</a>
+            </div>
+        </div>
+        <div class="btn-group dropup">
+            <button type="button" class="btn btn-outline-secondary">Opera Garnier</button>
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"></button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Historia</a>
+                <a class="dropdown-item" href="#">Repertuar</a>
+                <a class="dropdown-item" href="#">Cennik</a>
+            </div>
+        </div>
+        <div class="btn-group dropright">
+            <button type="button" class="btn btn-outline-secondary">Wersal</button>
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"></button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Historia</a>
+                <a class="dropdown-item" href="#">Galeria</a>
+                <a class="dropdown-item" href="#">Dodatkowe atrakcje</a>
+            </div>
+        </div>
+        <div class="btn-group dropleft">
+            <button type="button" class="btn btn-outline-secondary">Wieża Eiffla</button>
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"></button>
+            <div class="dropdown-menu">
+                <span class="dropdown-item-text" style="color: indigo">Wieża Eiffla</span>
+                <h6 class="dropdown-header">Zobacz:</h6>
+                <a class="dropdown-item" href="#">Historia</a>
+                <a class="dropdown-item" href="#">Cennik</a>
+                <a class="dropdown-item" href="#">Godziny otwarcia</a>
+            </div>
+        </div>
+        <button type="button" class="btn btn-mybutton">Bazylika Sacre Coeur</button>
+        <button type="button" class="btn btn-mybutton">Pałac Inwalidów</button>
+    </div>
+    <div class="row">
+        <div class="col-sm-7 mt-5">
+            <h2>Wyjazd na weekend</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat vehicula malesuada. Nulla et
+                dapibus lacus. Etiam ac lacus enim. Aenean ut scelerisque enim. Donec interdum, urna eget auctor
+                porttitor, justo metus mollis massa, eu laoreet diam ex ac tortor. Donec consectetur egestas mi. Duis
+                sagittis pellentesque est rutrum convallis. Vestibulum aliquet purus ipsum, nec tempus tellus blandit
+                eu. Pellentesque pulvinar mi vitae augue suscipit, quis aliquet nisi euismod. Vestibulum eget
+                condimentum nunc, vel aliquam libero. Nulla non pharetra mauris.</p>
+            <h2>Wyjazd na tydzień</h2>
+            <p>Nullam consectetur arcu non nisl cursus tempus. Cras sed cursus sapien. Maecenas auctor risus diam,
+                sollicitudin condimentum libero auctor non. Aliquam a magna vel neque laoreet sollicitudin sollicitudin
+                non lacus. Nullam aliquet augue a risus pulvinar, sed lacinia leo dictum. Aliquam venenatis nisl turpis,
+                at commodo nulla porta at. Phasellus metus turpis, feugiat in augue ut, ornare imperdiet ante. Quisque
+                quis tincidunt nibh, eu sollicitudin libero. Nam commodo vehicula ex, at blandit sapien elementum
+                molestie. Fusce scelerisque massa ac nulla rhoncus, id ornare sapien eleifend. Fusce porttitor tempus
+                purus vitae feugiat.</p>
+        </div>
+        <div class="col-sm-4 offset-sm-1 mt-5">
+            <p>Nullam consectetur arcu non nisl cursus tempus. Cras sed cursus sapien. Maecenas auctor risus diam,
+                sollicitudin</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
